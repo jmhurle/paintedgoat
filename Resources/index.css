@@ -1,16 +1,22 @@
+@font-face{
+
+}
 *{
     font-family: Verdana, Tahoma, sans-serif;
 }
 body{
     margin: 0;
 }
+
+/*Navigation*/
+
 nav{
     height: 80px;
     width: 100%;
     display: inline-flex;
     align-items: center;
     position: fixed;
-    background-color: rgba(172, 172, 172, 0.8);
+    background-color: rgba(194, 193, 193, 0.95);
     z-index: 2;
     top: 0;
     border-bottom-left-radius: 15px;
@@ -34,7 +40,61 @@ nav .right{
     align-items: center;
     justify-content: space-around;
     color: rgb(102, 102, 102);
+    margin-right: 24px;
 }
 nav .right h3{
-    padding: 8px;
+    padding: 30px 8px;
+    font-size: 1.2rem;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 40px;
+}
+
+/*Banner*/
+
+.banner{
+    background-color: rgba(159, 95, 189, 1.0);
+    max-width: 100%;
+    display: inline-flex;
+    padding-top: 80px;
+}
+.banner .left{
+  width: 50%;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+}
+.banner .left img{
+  width: 100%;
+  margin: 24px 32px;
+  border-radius: 15px;
+}
+.banner .right{
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    color: whitesmoke;
+}
+.banner .right img{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.banner h3{
+    font-weight: normal;
+}
+
+/*Transitions*/
+
+nav .right h3:hover{
+    transition: background-color 0.75s ease-out, color 0.75s ease-out;
+    background-color: rgba(104, 104, 104, 0.95);
+    color: white;
 }
