@@ -61,6 +61,7 @@ nav .right a{
     display: inline-flex;
     padding-top: 80px;
     margin: 0 8px;
+    border-radius: 10px;
 }
 .banner .left{
   width: 50%;
@@ -72,6 +73,7 @@ nav .right a{
   width: 100%;
   margin: 24px 32px;
   border-radius: 15px;
+  box-shadow: 5px 5px 10px #353434;
 }
 .banner .right{
     width: 50%;
@@ -125,7 +127,9 @@ header{
     max-width: 40%;
     max-height: 200px;
     display: block;
-    margin: 0
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 8px 10px 5px #686565;
 }
 .section1 .top,
 .section1 .middle,

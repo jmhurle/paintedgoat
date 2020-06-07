@@ -60,10 +60,11 @@ nav .right a{
     background-color:rgb(182, 31, 220);
     max-width: 100%;
     display: inline-flex;
-    padding-top: 88px;
+    padding-top: 150px;
     margin: 0 8px;
     flex-wrap: wrap;
     align-items: center;
+    border-radius: 10px;
 }
 .banner .top{
     width: 100%;
@@ -132,6 +133,7 @@ nav .right a{
     background-color: white;
     margin-top: 24px;
     border-radius: 8px;
+    box-shadow: 8px 10px 5px #686565;
 }
 .soft .varieties img{
     width: 100%;
@@ -152,7 +154,53 @@ nav .right a{
     padding: 0 16px
 }
 
-
+/* Slideshow attempt 1
+.slide_container{
+    width: 1920px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.image_container{
+    width: 7680px;
+    height: auto;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+.slider_image{
+    float: left;
+    margin: 0px;
+    padding:0px;
+}
+.button_container{
+    top: -40px;
+    position: relative;
+}
+.slider_button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+#slider_image_1:target ~ .image_container{
+    left: 0px;
+}
+#slider_image_2:target ~ .image_container{
+    left: -1920px;
+}
+#slider_image_3:target ~ .image_container{
+    left: -3840;
+}
+#slider_image_4:target ~ .image_container{
+    left: -5760px;
+}
+*/
 
 
 
