@@ -116,9 +116,11 @@ nav .right a{
 .aged,
 .specialty,
 .meat{
-    background-color: rgb(204, 203, 203);
+    background: linear-gradient(rgb(66, 66, 66), white);
     width: 100%;
     padding: 0;
+    float:left;
+    clear:none;
 }
 .soft h1,
 .logs h1,
@@ -131,7 +133,7 @@ nav .right a{
     padding-top: 32px;
     padding-bottom: 8px;
     font-size: 2.5rem;
-    color: rgba(13, 34, 34, 0.85);
+    color: rgba(207, 211, 211, 0.85);
 }
 .soft .varieties,
 .logs .varieties,
@@ -152,8 +154,8 @@ nav .right a{
 .aged .varieties div,
 .specialty .varieties div,
 .meat .varieties div{
-    width: 18%;
-    background-color: white;
+    width: 21%;
+    background: white;
     margin-top: 24px;
     margin-bottom: 16px;
     border-radius: 8px;
