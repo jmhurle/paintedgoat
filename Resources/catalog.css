@@ -107,42 +107,67 @@ nav .right a{
     font-weight: normal;
 }
 
-
 /*Soft Cheeses*/
 
-.soft{
+.soft,
+.logs,
+.buttons,
+.drums,
+.aged,
+.specialty,
+.meat{
     background-color: rgb(204, 203, 203);
     width: 100%;
     padding: 0;
 }
-.soft h1{
+.soft h1,
+.logs h1,
+.buttons h1,
+.drums h1,
+.aged h1,
+.specialty h1,
+.meat h1{
     text-align: center;
     padding-top: 32px;
     padding-bottom: 8px;
     font-size: 2.5rem;
     color: rgba(13, 34, 34, 0.85);
 }
-.soft .varieties{
+.soft .varieties,
+.logs .varieties,
+.buttons .varieties,
+.drums .varieties,
+.aged .varieties,
+.specialty .varieties,
+.meat .varieties{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 72px;
 }
-.soft .varieties div{
-    width: 30%;
+.soft .varieties div,
+.logs .varieties div,
+.buttons .varieties div,
+.drums .varieties div,
+.aged .varieties div,
+.specialty .varieties div,
+.meat .varieties div{
+    width: 18%;
     background-color: white;
     margin-top: 24px;
+    margin-bottom: 16px;
     border-radius: 8px;
     box-shadow: 8px 10px 5px #686565;
 }
-.soft .varieties img{
+.soft .varieties img,
+.logs .varieties img,
+.buttons .varieties img,
+.drums .varieties img,
+.aged .varieties img,
+.specialty .varieties img,
+.meat .varieties img{
     width: 100%;
     height: auto;
-}
-.fig,
-.pinenut_pesto,
-.plain{
-    margin-bottom: 16px;
 }
 .varieties h2{
     font-size: 2rem;
@@ -153,6 +178,7 @@ nav .right a{
     opacity: 0.8;
     padding: 0 16px
 }
+
 
 /* Slideshow attempt 1
 .slide_container{
