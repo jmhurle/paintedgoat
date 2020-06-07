@@ -3,9 +3,10 @@
 }
 body{
     margin: 0;
+    background-color: rgb(204, 203, 203)
 }
 
-/*Navigation*/
+/* Header Formatting */
 
 nav{
     height: 80px;
@@ -56,27 +57,37 @@ nav .right a{
 /*Banner*/
 
 .banner{
-    background-color: rgba(122, 31, 220, 1.0);
+    background-color:rgb(182, 31, 220);
     max-width: 100%;
     display: inline-flex;
-    padding-top: 80px;
+    padding-top: 88px;
     margin: 0 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner .top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner .top img{
+    width: 40%;
 }
 .banner .left{
-  width: 50%;
+  width: 59%;
   height: auto;
   display: flex;
   box-sizing: border-box;
 }
 .banner .left img{
-  width: 100%;
+  width: 90%;
   margin: 24px 32px;
   border-radius: 15px;
 }
 .banner .right{
-    width: 50%;
+    width: 40%;
     box-sizing: border-box;
-    margin: 0 40px;
+    margin: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -95,46 +106,52 @@ nav .right a{
     font-weight: normal;
 }
 
-header{
-    background-color: rgb(253, 229, 244);
-}
 
+/*Soft Cheeses*/
 
-/*About Us Section*/
-.about_us{
-    background-color: rgb(253, 229, 244);
-    color: darkslategrey;
-    padding: 32px 0;
+.soft{
+    background-color: rgb(204, 203, 203);
+    width: 100%;
+    padding: 0;
 }
-#AboutUs{
-    width: 22%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 16px;
+.soft h1{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    font-size: 2.5rem;
+    color: rgba(13, 34, 34, 0.85);
 }
-.about_us .section1{
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding-bottom: 32px;
-}
-.about_us .section1 h3{
-    max-width: 60%;
-}
-.about_us .section1 img{
-    max-width: 40%;
-    max-height: 200px;
-    display: block;
-    margin: 0
-}
-.section1 .top,
-.section1 .middle,
-.section1 .bottom{
+.soft .varieties{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 72px;
 }
+.soft .varieties div{
+    width: 30%;
+    background-color: white;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+.soft .varieties img{
+    width: 100%;
+    height: auto;
+}
+.fig,
+.pinenut_pesto,
+.plain{
+    margin-bottom: 16px;
+}
+.varieties h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.varieties p{
+    color: gray;
+    opacity: 0.8;
+    padding: 0 16px
+}
+
 
 
 
