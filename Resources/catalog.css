@@ -15,7 +15,6 @@ nav{
     align-items: center;
     position: fixed;
     background-color: rgba(194, 193, 193, 0.95);
-    z-index: 100;
     top: 0;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -41,17 +40,43 @@ nav .right{
     margin-right: 24px;
 }
 nav .right h3,
-nav .right a{
+nav .right a,
+nav .right .dropdown .dropbtn{
     padding: 30px 8px;
     font-size: 1.2rem;
     flex-grow: 1;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-nav .right a{
+nav .right .dropdown {
+    position: relative;
+    display: inline-block;
+}
+nav .right a,
+nav .right .dropdown .dropdown_content{
     color:rgb(102, 102, 102);
     font-weight: bold;
     text-decoration: none;
+}
+nav .right .dropdown .dropdown_content{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: rgba(194, 193, 193, 0.95);
+    border-radius: 2px;
+    margin-top: 29px;
+    text-align: center;
+    min-width: 160px;
+}
+nav .right .dropdown .dropdown_content a{
+    color:rgb(102, 102, 102);
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 2px;
+    padding: 8px 16px;
+    border-top: 1px dotted black;
 }
 
 /*Banner*/
@@ -107,7 +132,7 @@ nav .right a{
     font-weight: normal;
 }
 
-/*Soft Cheeses*/
+/*Catalog Styling*/
 
 .soft,
 .logs,
@@ -132,7 +157,7 @@ nav .right a{
     text-align: center;
     padding-top: 32px;
     padding-bottom: 8px;
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     color: rgba(207, 211, 211, 0.85);
 }
 .soft .varieties,
@@ -180,7 +205,6 @@ nav .right a{
     opacity: 0.8;
     padding: 0 16px
 }
-
 
 /* Slideshow attempt 1
 .slide_container{
@@ -231,16 +255,32 @@ nav .right a{
 */
 
 
-
 /*Transitions*/
 
 nav .right h3:hover{
     transition: background-color 0.75s ease-out, color 0.75s ease-out;
-    background-color: rgba(104, 104, 104, 0.95);
+    background-color: rgba(150, 146, 146, 0.95);
     color: white;
 }
 nav .right a:hover{
     transition: background-color 0.75s ease-out, color 0.75s ease-out;
-    background-color: rgba(104, 104, 104, 0.95);
+    background-color: rgba(150, 146, 146, 0.95);
+    color: white;
+}
+nav .right .dropdown .dropdown_content a:hover{
+    transition: background-color 0.75s ease-out, color 0.3s ease-out;
+    background-color: rgba(150, 146, 146, 0.95);
+    color: white;
+}
+/* Show the dropdown menu on hover */
+#catalog_dropdown:hover .dropdown_content{
+    display: block;
+}
+#dropdownButton:hover .dropdown_content{
+    display: block;
+}
+/*Make Dropdown Button Stay Same color while selecting from dropdown menu*/
+.dropdown:hover .dropbtn {
+    background-color: rgba(150, 146, 146, 0.95);
     color: white;
 }
