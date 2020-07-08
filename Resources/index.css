@@ -16,8 +16,8 @@ nav{
     background-color: rgba(194, 193, 193, 0.95);
     z-index: 100;
     top: 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 nav .left{
     width: 60%;
@@ -59,8 +59,7 @@ nav .right a{
     background-color: rgba(122, 31, 220, 1.0);
     max-width: 100%;
     display: inline-flex;
-    padding-top: 80px;
-    margin: 0 8px;
+    margin-top: 80px;
     border-radius: 10px;
 }
 .banner .left{

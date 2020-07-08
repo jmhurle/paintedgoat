@@ -85,8 +85,7 @@ nav .right .dropdown .dropdown_content a{
     background-color:rgb(182, 31, 220);
     max-width: 100%;
     display: inline-flex;
-    padding-top: 150px;
-    margin: 0 8px;
+    margin-top: 80px;
     flex-wrap: wrap;
     align-items: center;
     border-radius: 10px;
